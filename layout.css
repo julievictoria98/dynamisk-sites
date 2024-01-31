@@ -1,0 +1,114 @@
+/* KATEGORI SIDE */
+.grid1-1-1-1{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 1em;
+    justify-items: center;
+    margin: 0;
+    width: 100%;
+}
+
+.grid1-1-1-1 article{
+    border: 3px solid rgb(0, 0, 16); ;
+    box-sizing:border-box; 
+    padding: 2.5vw;
+    margin-bottom: 1vw;
+    width: 20vw;
+    height: 17vw;
+
+}
+
+.grid1-1-1-1 h1 {
+    grid-column: 1/-1;
+    margin-bottom: 3vw;
+    margin-top: 3vw;
+}
+
+.grid1-1-1-1 article:first-of-type {
+    background-image: url('https://kea-alt-del.dk/t7/images/webp/1000/1164.webp'); 
+    background-size: cover; 
+    background-position: center;
+    
+}
+
+.grid1-1-1-1 article:nth-of-type(2) {
+    background-image: url('https://kea-alt-del.dk/t7/images/webp/1000/1572.webp'); 
+    background-size: cover;
+    background-position: center;
+}
+
+.grid1-1-1-1 article:nth-of-type(3) {
+    background-image: url('https://kea-alt-del.dk/t7/images/webp/1000/1526.webp'); 
+    background-size: cover;
+    background-position: center;
+}
+
+.grid1-1-1-1 article:last-child {
+    background-image: url('https://kea-alt-del.dk/t7/images/webp/1000/1548.webp'); 
+    background-size: cover;
+    background-position: center;
+}
+
+
+/* PRODUKT SIDE */
+
+
+.grid1-1{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-items: center;
+}
+
+/* PRODUKTLISTE SIDE */
+
+.grid1-1-1{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    align-items: start;
+    text-align: center;
+    gap: 2vw;
+}
+
+.grid1-1-1 h1{
+    grid-column: 1/-1;
+}
+
+.grid1-1-1 img{
+    width: 60%;
+    height: auto;
+
+}
+
+.sold-out::before {
+    content: "Sold Out";
+    position: absolute;
+    top: -10;
+    left: 10;
+    background-color: rgb(158, 160, 180);;
+    color: white;
+    padding: 15px;
+    font-size: 1vw;
+    z-index: 2;
+}
+
+.sale::before {
+    content: "Sale";
+    position: absolute;
+    top: -10;
+    left: 10;
+    background-color: red;
+    color: white;
+    padding: 15px;
+    z-index: 2;
+}
+
+
+
+
+
+
+
+
+
+
+

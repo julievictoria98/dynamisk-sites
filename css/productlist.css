@@ -34,6 +34,9 @@ h3{
     font-weight: 100;
 }
 
+.grid1-1 h3{
+    text-align: left;
+}
 
 li{
     font-family: sans-serif;
@@ -85,6 +88,8 @@ article{
 .grid1-1{
     display: grid;
     grid-template-columns: 1fr 1fr;
+    justify-items: start;
+    row-gap: 2px;
 }
 
 .productname{

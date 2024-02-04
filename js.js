@@ -26,6 +26,13 @@ function showProduct(product){
     clone.querySelector("div").appendChild(saleElement);
     clone.querySelector("p").classList.add("sale");
 
+    const newPriceElement = document.createElement("h3");
+    newPriceElement.textContent = "DDK: " + Math.round(product.price / product.discount) * 100 + "kr";
+
+    clone.querySelector(".grid1-1").appendChild(newPriceElement);
+
+
+
     // const newDivElement = document.createElement("div");
     // newDivElement.textContent = "-" + product.discount + "%"; // Example content, replace with actual discount data
     // clone.querySelector("article").appendChild(newDivElement)

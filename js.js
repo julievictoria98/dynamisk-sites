@@ -12,10 +12,22 @@ function showProduct(product){
     console.log("product")
     const template = document.querySelector("#productlist_template").content;
     const clone = template.cloneNode(true);
+    
+    const divElement = clone.querySelector("div");
 
+
+
+    if(product.soldout){
+        const divElement = document.createElement("div");
+    divElement.classList.add("sold-out");
+    divElement.appendChild(clone.querySelector("img").parentNode.replaceChild(divElement, clone.querySelector("img")));
+      } else {
+
+    }
     clone.querySelector(".productname").textContent = product.productdisplayname;
-
+    clone.querySelector(".price span").textContent = product.price;
     document.querySelector("main").appendChild(clone);
+
 
 }
 

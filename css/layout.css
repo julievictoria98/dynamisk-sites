@@ -1,3 +1,30 @@
+
+
+/* Brødkrumme */
+ul.breadcrumb{
+    padding-left: 5.1vw;
+    grid-template-columns: -1/-2;
+    grid-row: 2;
+    text-align: left;
+ }   
+
+ul.breadcrumb li {
+  display: inline;
+  font-size: 1.2vw;
+}
+
+ul.breadcrumb li+li:before {
+  padding: 8px;
+  color: black;
+  content: "/\00a0";
+}
+
+li a:hover {
+  color:  rgb(50, 50, 183);
+  text-decoration: underline;
+}
+
+
 /* KATEGORI SIDE */
 .grid1-1-1-1{
     display: grid;
@@ -74,23 +101,13 @@
 }
 
 .grid1-1-1 img{
-    width: 60%;
+    width: 100%;
     height: auto;
 
 }
 
-.sold-out::before {
-    content: "Sold Out";
-    position: absolute;
-    top: -10;
-    left: 10;
-    background-color: rgb(158, 160, 180);;
-    color: white;
-    padding: 15px;
-    font-size: 1vw;
-    z-index: 2;
-}
 
+/* 
 .sale::before {
     content: "Sale";
     position: absolute;
@@ -100,7 +117,7 @@
     color: white;
     padding: 15px;
     z-index: 2;
-}
+} */
 
 
 

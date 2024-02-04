@@ -6,16 +6,28 @@
     <title>Document</title>
     <link rel="stylesheet" href="css/layout.css">
     <link rel="stylesheet" href="css/productlist.css"> 
+
+
 </head>
 <body>
+    <header> 
+    </header>
     <main class="grid1-1-1">
-        <h1>Produktliste</h1>
+        <h1 class="brandname">Fashion4you</h1>
+        <ul class="breadcrumb">
+            <li><a href="index.html">Forside</a></li>
+            <li><a href="kategori.html">Kategori</a></li>
+            <li><a href="produktliste.html">Produktliste</a></li>
+        </ul>
+        <h2 class="page-name">Produktliste</h2>
         <template id="productlist_template">
             <article>
                 <a href="produkt.html">
                     <img src="https://kea-alt-del.dk/t7/images/webp/1000/1529.webp" alt="">
-                    <h2 class="productname">Tee</h2>
-                    <h3 class="price"><span></span> kr</h3> 
+                    <div class="grid1-1">
+                    <h3 class="productname">Tee</h3>
+                    <h3 class="price">DKK: <span></span> kr</h3> 
+                    </div>
                 </a>
             </article>
         </template>

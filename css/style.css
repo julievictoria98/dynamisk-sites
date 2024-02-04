@@ -66,27 +66,6 @@ img{
     color: aliceblue;
 }
 
-/* Brødkrumme */
-ul.breadcrumb{
-    padding-left: 5.1vw;
-}
-
-ul.breadcrumb li {
-  display: inline;
-  font-size: 1.2vw;
-}
-
-ul.breadcrumb li+li:before {
-  padding: 8px;
-  color: black;
-  content: "/\00a0";
-}
-
-li a:hover {
-  color:  rgb(50, 50, 183);
-  text-decoration: underline;
-}
-
 
 
 .grid1-1-1 h3{

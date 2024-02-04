@@ -15,20 +15,41 @@ function showProduct(product){
     
     const divElement = clone.querySelector("div");
 
+    if(product.soldout){
+    clone.querySelector("article").classList.add("sold-out");
+
+    } 
+
+    if(product.discount >=1){
+    const saleElement = document.createElement('p');
+    saleElement.textContent = "-" + product.discount + "%"; // Set the discount text content
+    clone.querySelector("div").appendChild(saleElement);
+    clone.querySelector("p").classList.add("sale");
+
+    // const newDivElement = document.createElement("div");
+    // newDivElement.textContent = "-" + product.discount + "%"; // Example content, replace with actual discount data
+    // clone.querySelector("article").appendChild(newDivElement)
+    // clone.querySelector("div").classList.add("sale");
 
 
+    }
+    
+    clone.querySelector(".productname").textContent = product.productdisplayname;
+    clone.querySelector(".price span").textContent = product.price;
+    document.querySelector("main").appendChild(clone);
+
+
+
+
+/* 
     if(product.soldout){
         const divElement = document.createElement("div");
     divElement.classList.add("sold-out");
     divElement.appendChild(clone.querySelector("img").parentNode.replaceChild(divElement, clone.querySelector("img")));
       } else {
 
-    }
-    clone.querySelector(".productname").textContent = product.productdisplayname;
-    clone.querySelector(".price span").textContent = product.price;
-    document.querySelector("main").appendChild(clone);
-
-
+    } */
+   
 }
 
 /* [{"id":1163,

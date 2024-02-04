@@ -27,7 +27,10 @@ function showProduct(product){
     clone.querySelector("p").classList.add("sale");
 
     const newPriceElement = document.createElement("h3");
-    newPriceElement.textContent = "DDK: " + Math.round(product.price / product.discount) * 100 + "kr";
+    newPriceElement.textContent = "DDK: " + Math.round(product.price / product.discount) * 100 + " kr";
+    newPriceElement.style.color = 'red';
+
+    clone.querySelector(".price").classList.add("line-through");
 
     clone.querySelector(".grid1-1").appendChild(newPriceElement);
 

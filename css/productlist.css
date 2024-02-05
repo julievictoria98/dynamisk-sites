@@ -104,13 +104,3 @@ article{
 
 
 
-
-
-
-@font-face {
-    font-family: 'playfair_regular';
-    src: url('../fonts/playfairdisplay-variablefont_wght-webfont.woff2') format('woff2'),
-         url('../fonts/playfairdisplay-variablefont_wght-webfont.woff2') format('woff');
-    font-weight: normal;
-    font-style: normal;
-}

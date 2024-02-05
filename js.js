@@ -34,15 +34,9 @@ function showProduct(product){
 
     clone.querySelector(".grid1-1").appendChild(newPriceElement);
 
-
-
-    // const newDivElement = document.createElement("div");
-    // newDivElement.textContent = "-" + product.discount + "%"; // Example content, replace with actual discount data
-    // clone.querySelector("article").appendChild(newDivElement)
-    // clone.querySelector("div").classList.add("sale");
-
-
     }
+    clone.querySelector(".see-more").setAttribute("href", `produkt.html?id=${product.id}`);
+
     
     clone.querySelector(".productname").textContent = product.productdisplayname;
     clone.querySelector(".price span").textContent = product.price;
@@ -88,35 +82,35 @@ soldout":0} */
 
 /*Soldout funtion */
 
-"use strict"
 
-window.addEventListener('load', main);
 
-function main() {
-    applyGrayScale();
-    setEventListeners();
-}
+// window.addEventListener('load', main);
 
-function applyGrayScale() {
-    const soldOutDivs = document.querySelectorAll('.grid1-1-1 .sold-out');
+// function main() {
+//     applyGrayScale();
+//     setEventListeners();
+// }
 
-    soldOutDivs.forEach(soldOutDiv => {
-        const image = soldOutDiv.querySelector('img');
+// function applyGrayScale() {
+//     const soldOutDivs = document.querySelectorAll('.grid1-1-1 .sold-out');
 
-        if (image) {
-            image.style.filter = 'grayscale(100%)';
-        }
-    });
-}
+//     soldOutDivs.forEach(soldOutDiv => {
+//         const image = soldOutDiv.querySelector('img');
 
-function setEventListeners() {
-    document.querySelectorAll(".btn").forEach(function(element) {
-        element.addEventListener("click", function() {
-            redirect(element.firstElementChild.href);
-        });
-    })
-}
+//         if (image) {
+//             image.style.filter = 'grayscale(100%)';
+//         }
+//     });
+// }
 
-function redirect(url) {
-    window.location = url;
-}
+// function setEventListeners() {
+//     document.querySelectorAll(".btn").forEach(function(element) {
+//         element.addEventListener("click", function() {
+//             redirect(element.firstElementChild.href);
+//         });
+//     })
+// }
+
+// function redirect(url) {
+//     window.location = url;
+// }

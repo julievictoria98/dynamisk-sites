@@ -79,13 +79,6 @@ li a:hover {
 
 /* PRODUKT SIDE */
 
-
-.grid1-1{
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    justify-items: center;
-}
-
 /* PRODUKTLISTE SIDE */
 
 .grid1-1-1{

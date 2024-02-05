@@ -6,6 +6,7 @@
     <title>Document</title>
     <link rel="stylesheet" href="css/layout.css">
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/product.css">
 
 </head>
 <body>
@@ -19,12 +20,9 @@
                 <li><a href="produktliste.html">Produktliste</a></li>
              </ul>
         </section>
-        <section class="grid1-1">
-            <div>
+        <section class="grid1-1" class="product-info">
                 <img class="product_img" src="https://kea-alt-del.dk/t7/images/webp/1000/1532.webp" alt="grey puma t-shirt">
-            </div>
-            <div>
-                <h1>Puma T-shirt</h1>
+                <h1 class=brand-name>Puma T-shirt</h1>
                 <h2 class="price">899 kr</h2>
                 <h2>Vælg størrelse</h2>
                 <label for="size" class="label">
@@ -36,23 +34,16 @@
                         <option value="xl">XL</option>
                     </select>
                 </label>
-                <br>
-                <br>
                 <button class="button">Læg i Kurv</button>
-                <br>
-                <br>
-                <br>
-                <br>
                 <h2>Produkt information</h2>
                 <ul>
-                    <li><strong>Mærke</strong>:Puma</li>
-                    <li><strong>Id</strong>:1532</li>
-                    <li><strong>Køn </strong> Mand</li>
-                    <li><strong>Farve:</strong>Grå</li>
+                    <li class="brand-name"><strong>Mærke: </strong><span></span></li>
+                    <li class="id"><strong>Id: </strong><span></span></li>
+                    <li class="gender"><strong>Køn: </strong><span></span></li>
                 </ul>
-            </div>
         </section>
     </main>
     <footer></footer> 
+        <script src="product.js"></script>
 </body>
 </html>

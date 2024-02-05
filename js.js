@@ -31,11 +31,11 @@ function showProduct(product){
     newPriceElement.style.color = 'red';
 
     clone.querySelector(".price").classList.add("line-through");
-
     clone.querySelector(".grid1-1").appendChild(newPriceElement);
 
     }
     clone.querySelector(".see-more").setAttribute("href", `produkt.html?id=${product.id}`);
+    clone.querySelector("img").src = `https://kea-alt-del.dk/t7/images/webp/640/${product.id}.webp`
 
     
     clone.querySelector(".productname").textContent = product.productdisplayname;

@@ -1,5 +1,7 @@
+const urlParams= new URLSearchParams(window.location.search);
+const category = urlParams.get("category");
 
-fetch("https://kea-alt-del.dk/t7/api/products")
+fetch("https://kea-alt-del.dk/t7/api/products?category=" + category)
 .then(res =>res.json()).then(data=>showProducts(data))
 
 function showProducts(products){
@@ -20,14 +22,14 @@ function showProduct(product){
 
     } 
 
-    if(product.discount >=1){
+    if(product.discount){
     const saleElement = document.createElement('p');
     saleElement.textContent = "-" + product.discount + "%"; // Set the discount text content
     clone.querySelector("div").appendChild(saleElement);
     clone.querySelector("p").classList.add("sale");
 
     const newPriceElement = document.createElement("h3");
-    newPriceElement.textContent = "DDK: " + Math.round(product.price / product.discount) * 100 + " kr";
+    newPriceElement.textContent = "DDK: " + Math.round(product.price * product.discount) / 100 + " kr";
     newPriceElement.style.color = 'red';
 
     clone.querySelector(".price").classList.add("line-through");

@@ -28,14 +28,14 @@ li a:hover {
 /* KATEGORI SIDE */
 .grid1-1-1-1{
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
     gap: 1em;
     justify-items: center;
     margin: 0;
     width: 100%;
 }
 
-.grid1-1-1-1 article{
+.grid1-1-1-1 div{
     border: 3px solid rgb(0, 0, 16); ;
     box-sizing:border-box; 
     padding: 2.5vw;
@@ -51,30 +51,46 @@ li a:hover {
     margin-top: 3vw;
 }
 
-.grid1-1-1-1 article:first-of-type {
-    background-image: url('https://kea-alt-del.dk/t7/images/webp/1000/1164.webp'); 
+.grid1-1-1-1 div:first-of-type {
+    background-image: url('https://kea-alt-del.dk/t7/images/webp/1000/1526.webp'); 
     background-size: cover; 
     background-position: center;
     
 }
 
-.grid1-1-1-1 article:nth-of-type(2) {
-    background-image: url('https://kea-alt-del.dk/t7/images/webp/1000/1572.webp'); 
+.grid1-1-1-1 div:nth-of-type(2) {
+    background-image: url('https://kea-alt-del.dk/t7/images/webp/1000/1164.webp'); 
     background-size: cover;
     background-position: center;
 }
 
-.grid1-1-1-1 article:nth-of-type(3) {
-    background-image: url('https://kea-alt-del.dk/t7/images/webp/1000/1526.webp'); 
-    background-size: cover;
-    background-position: center;
-}
-
-.grid1-1-1-1 article:last-child {
+.grid1-1-1-1 div:nth-of-type(3) {
     background-image: url('https://kea-alt-del.dk/t7/images/webp/1000/1548.webp'); 
     background-size: cover;
     background-position: center;
 }
+
+.grid1-1-1-1 div:nth-of-type(4) {
+    background-image: url('https://kea-alt-del.dk/t7/images/webp/1000/23482.webp'); 
+    background-size: cover;
+    background-position: center;
+}
+
+.grid1-1-1-1 div:nth-of-type(5) {
+    background-image: url('https://kea-alt-del.dk/t7/images/webp/1000/18441.webp'); 
+    background-size: cover;
+    background-position: center;
+}
+
+.grid1-1-1-1 div:nth-of-type(6) {
+    background-image: url('https://kea-alt-del.dk/t7/images/webp/1000/1551.webp'); 
+    background-size: cover;
+    background-position: center;
+}
+
+
+
+
 
 
 /* PRODUKT SIDE */

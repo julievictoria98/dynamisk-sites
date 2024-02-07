@@ -11,12 +11,16 @@ a{
     color: black;
     text-decoration: none;
 }
-h1{
+
+.page-name{
+    text-align: center;
     font-family:sans-serif;
     color: rgb(14, 14, 186);
     font-size: 3vw;
     text-align: center;
+  
 }
+
 
 
 li{

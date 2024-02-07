@@ -42,7 +42,7 @@ function showProduct(product){
     
     clone.querySelector(".productname").textContent = product.productdisplayname;
     clone.querySelector(".price span").textContent = product.price;
-    document.querySelector("main").appendChild(clone);
+    document.querySelector("section").appendChild(clone);
 
 
 

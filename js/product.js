@@ -15,7 +15,18 @@ function showProduct(product) {
   document.querySelector("img").src = `https://kea-alt-del.dk/t7/images/webp/640/${product.id}.webp`
 
 
+    if(product.discount){
+      document.querySelector(".price").textContent = Math.round(product.price * product.discount) / 100 + " kr";
+      document.querySelector(".price").style.color = 'red';
+    }
+    
+if (product.category === "Accessories" || product.category === "Sporting Goods") {
+    // Remove the <label> element
+    document.querySelector("label").remove();
+    document.querySelector("#pick_size").remove();
 
+
+}
 }
 
 
